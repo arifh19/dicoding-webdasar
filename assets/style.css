@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Quicksand',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #00a2c6
+}
+
+h3 {
+    color: #00a2c6
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+nav a:hover {
+    color: blue;
+    font-weight: bold;
+}
+.profile header {
+    text-align: center;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile img {
+    width: 200px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+header{
+    display: inline;
+}
+
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    
+    /* properti pendukung */
+    text-align: right;
+    overflow: scroll;
+ }
+ .flex-container-row {
+    display: flex;
+ }
+ 
+ .button {
+    flex-basis: 25%;
+   
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+ }
+ .double {
+    flex-basis: 50%;
+ }
+ .operator,
+ .negative,
+ .equals {
+    background: orange;
+ }
+ 
+ .button:hover {
+    font-weight: bold;
+ }
+ @media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+ }
+ .history {
+    overflow: scroll;
+ }
+ 
+ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+ }
+ th,
+ td {
+    text-align: center;
+    padding: 16px;
+ }
+ th {
+    background-color: orange;
+    color: white;
+ }
+ tr:nth-child(even) {
+    background-color: #d2d2d2;
+ }
+ @media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+    .history {
+        width: 100%;
+    }
+ }
